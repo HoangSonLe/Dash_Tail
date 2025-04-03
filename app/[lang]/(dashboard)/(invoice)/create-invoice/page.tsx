@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon } from "@iconify/react";
 import { Input } from "@/components/ui/input";
-import Flatpickr from "react-flatpickr";
+const Flatpickr = require("react-flatpickr").default;
 import { Label } from "@/components/ui/label";
 import { Euro, Plus, Trash2, Upload } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
@@ -26,6 +26,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Breadcrumbs, BreadcrumbItem } from "@/components/ui/breadcrumbs";
+import "flatpickr/dist/flatpickr.css";
 
 const InvoicePage = () => {
   return (
@@ -57,7 +58,7 @@ const InvoicePage = () => {
                     <Input type="text" placeholder="Invoice Name" size="lg" />
                     <Input type="text" placeholder="Invoice ID" size="lg" />
                     <div className="relative">
-                      <Flatpickr
+                    <Flatpickr
                         className="w-full border border-default-300 bg-background text-default-500  focus:outline-none h-10 rounded-md px-2 placeholder:text-default-500"
                         placeholder="Invoice Date"
                       />
