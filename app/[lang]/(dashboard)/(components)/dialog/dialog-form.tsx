@@ -14,7 +14,8 @@ import { Label } from "@/components/ui/label";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import Link from "next/link";
 import { useState } from "react";
-import Flatpickr from "react-flatpickr";
+const Flatpickr = require("react-flatpickr").default;
+import "flatpickr/dist/flatpickr.css";
 const DialogForm = () => {
   const [picker, setPicker] = useState<Date>(new Date());
   return (
