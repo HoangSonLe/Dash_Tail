@@ -81,7 +81,7 @@ function StackedBarChart(): JSX.Element {
           tickTextWidth={isSmallScreen ? 75 : undefined}
           tickTextFitMode={FitMode.Trim}
           type="y"
-          tickFormat={(_, i) => educationsData[i].country}
+          tickFormat={(_: number, i: number) => educationsData[i].country}
           label={isSmallScreen ? undefined : "Country"}
           numTicks={educationsData.length}
           tickTextColor={`hsl(${theme?.cssVars[

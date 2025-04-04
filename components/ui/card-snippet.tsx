@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/collapsible";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
-import SyntaxHighlighter from "react-syntax-highlighter";
+const SyntaxHighlighter = require("react-syntax-highlighter").default;
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { themes } from "@/config/thems";
 import { useTheme } from "next-themes";

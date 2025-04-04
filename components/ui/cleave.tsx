@@ -1,5 +1,5 @@
 import * as React from "react";
-import Cleave from "cleave.js/react";
+const Cleave = require("cleave.js/react").default;
 import "cleave.js/dist/addons/cleave-phone.us";
 import { cn } from "@/lib/utils";
 import { CleaveOptions } from "cleave.js/options";

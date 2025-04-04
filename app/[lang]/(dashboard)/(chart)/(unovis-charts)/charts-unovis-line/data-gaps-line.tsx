@@ -86,7 +86,7 @@ const DataGapsLine = ({ height = 400 }) => {
         />
         <VisAxis
           type="y"
-          tickFormat={(d) => `${d}${d ? "M" : ""}`}
+          tickFormat={(d: number) => `${d}${d ? "M" : ""}`}
           tickValues={[0, 200, 400, fallbackValue || 0, 600]}
           tickTextColor={`hsl(${theme?.cssVars[
               mode === "dark" || mode === "system" ? "dark" : "light"
